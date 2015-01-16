@@ -1,6 +1,22 @@
+/***********************
+Table of Contents
+
+1. General Styles
+2. Nav Styles
+3. Background Colors
+4. Power Hours Section Styles
+5. About Section Styles
+6. Need Section Styles
+7. Footer Styles
+************************/
+
 .row-top-spacer {
 	margin-top: 20px;
 }
+
+/***********************
+General Styles
+************************/
 
 body {
 	padding-top: 50px;
@@ -12,37 +28,43 @@ body {
 	margin-bottom: 100px;
 }
 
+
+/***********************
+Nav Styles
+************************/
+
 .navbar {
 	box-shadow: 0 1px 5px gray;
 }
 
 .nav li:hover {
 	color: #555;
-	background: #e7e7e7
+	background: #e7e7e7;
 }
 .jumbotron {
+	display: table;
+	width: 100%;
+	min-height: 300px;
 	margin-bottom: 0;
 	background: url(../img/beer2.jpg);
 	background-size: 450px 450px; 
 	padding: 0 0;
 }
 
-.jumbotron .container {
-	/*background: rgba(255,255,255,.75);*/
-
-}
 
 .jumbotron #bg {
-	/*background: rgba(0,0,0,.3); */	
-	padding: 55px 0;
 	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .jumbotron img {
 	border-radius: 3px;
 	display: block;
 	width: 75%;
+	max-width: 510px;
 	margin: 0 auto;
+	box-shadow: 0 0 3px gray;
 }
 
 .jumbotron p {
@@ -50,36 +72,94 @@ body {
 	margin: 20px auto 0;
 }
 
-/*.jumbotron h1 {
-	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-	margin-bottom: 0;
-	color: #fff;
+.jumbotron p a {
+	box-shadow: 0 0 3px #aaa;
 }
 
-.jumbotron p:first-of-type {
-	margin: 5px 0 20px 0; 
-	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-	color: #fff;
-	font-weight: 400;
-}*/
-
+/***********************
+Background Colors
+************************/
 #powerhours {
-	background: #00B0B0;
+	/*based off of #A68864 here http://serennu.com/colour/colourcalculator.php*/
+	/*background: #00B0B0;*/
+/*	background: #64A667;*/
+	/*background: #64A3A6 ;*/
+	/*background: #82A664;*/
+	/*background: #0da89e;*/
+	
+	/*background: #286090; strong blue*/ 
+	background: #286090;
+
+/*	background: #316999;*/
 	padding: 70px 0 60px 0;
 }
 
-#powerhours h1 {
-	margin: 0 0 60px 0;
+.btn-primary, .btn-primary:visited, .btn-primary:active, .btn-primary:focus {
+	background: #00b5c2;
+	border-color: #00b5c2;
+}
+
+.btn-primary:hover  {
+	background: #00909b;
+	border-color: #00909b;
+}
+
+#about {
+	text-align: center;
+	background: #E8E8DC;
+}
+
+#need {
+	background: white;
+}
+
+.beer {
+	background: tomato;
+}
+
+.tequila {
+	background-color: teal;
+}
+
+.speakers {
+	background-color: #FAAC1D;
+}
+
+.friends {
+	background-color: #92CC62;
+}
+
+footer {
+	background:  #6a6a6a;
+}
+
+#to-top {
+	background: #eee;
+}
+
+/***********************
+Power Hours Section Styles
+************************/
+
+
+#powerhours {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#powerhours h1 {	
 	color: #fff;
-	font-size: 50px;
+	font-size: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
 }
 
 #powerhours h4 {
 	color: #fff;
-	font-size: 22px;
+	font-size: 18px;
 }
 
-#powerhours .row div {
+#powerhours .row > div {
 	margin-bottom: 35px;
 }
 
@@ -98,27 +178,37 @@ body {
 	text-transform: uppercase;
 }
 
-.content hr {
+#powerhours hr, .content hr {
 	width: 160px;
 	border-top: 1px solid #ccc;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#about {
-	text-align: center;
+#powerhours hr {
+	width: 130px;
+	border-top: 1px solid #ddd;
+	margin-bottom: 35px;
 }
+
+/***********************
+About Section Styles
+************************/
 
 #about p:nth-of-type(2) {
 	margin-top: 30px;
 }
 
+/***********************
+Need Section Styles
+************************/
+
 #need .row {
 	margin-bottom: 40px;
 }
 
-#need {
-	background: #FF8473;
+#need h2 {
+	margin-bottom: 35px;
 }
 
 #need p {
@@ -130,17 +220,55 @@ body {
 	position: relative;
 }
 
+#need .row div:first-of-type {
+	margin-bottom: 20px;
+}
+
 .row h4 {
 	font-size: 25px;
 }
 
-#need .row div.image-issue {
-	position: absolute;
-	bottom: 0;
+.need-icon {
+	display: table;
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto; 
+	border-radius: 50%;
+}
+
+.need-icon div {	
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.friends {
+	padding: 0 5px 0 5px;
+}
+
+.friends img {
+	float: left;
+	max-width: 33.33333333%;
+}
+
+.need-text hr {
+	margin-left: 0;
+	width: 100px;
+	border-top: 3px solid #ccc;
 }
 
 #need .row div.cocktail {
 	right: 0;
+}
+
+.friends div img:first-of-type {
+	margin-left: 6px;
+}
+.friends div img:nth-of-type(2) {
+	margin-left: -6px;
+}
+.friends div img:nth-of-type(3) {
+	margin-left: -4px;
 }
 
 .center-image {
@@ -148,11 +276,27 @@ body {
 	float: none;
 }
 
+
+/***********************
+Footer Styles
+************************/
+
+
 footer {
-	background:  #424647; /*#424647*/
+
 	padding-top: 50px;
 	padding-bottom: 50px;
 	position: relative; 
+}
+
+footer p, footer p a {
+	color: #fff;
+	font-size: 16px;
+}
+
+footer p a:hover {
+	color: #aaa;
+	text-decoration: none;
 }
 
 footer hr {
@@ -160,41 +304,17 @@ footer hr {
 	margin-bottom: 39px;
 }
 
-#link-to-top {
+#to-top {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -25px;
-}
-
-
-#link-to-top a {
-	border: 1px solid black;
-	margin-top: -10px;
-	display: block;
-	margin: 0 auto;
-	border-radius: 50%;
-	color: black;
-	background: white;
+	top: -22px;
 	width: 50px;
 	height: 50px;
-	font-size: 25px;
-
-}
-
-#link-to-top img {
-	width: 28px;
-	margin-top: 4px;
-}
-
-.speaker img {
-	max-width: 75%;
-	margin: 0 auto;
-}
-
-.small-tequila img {
-	max-width: 50%;
-	margin: 0 auto;
+	border: 1px solid black;	
+	padding: 7px 10px 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*********************
@@ -203,17 +323,29 @@ For sm devices
 
 @media screen and (min-width: 768px) {
 
-	.jumbotron img {
-		/*width: 50%;*/
-		max-width: 510px;
+
+	.jumbotron #bg {
+		padding: 100px 0;
 	}
 
 	.center-image {
 		float: left;
 	}
 
-	#powerhours .row div {
-		margin-bottom: 0;
+	#powerhours {
+		padding-top: 70px;
+	}
+
+	#powerhours h1 {
+		margin-top: 12px;
+	}
+
+	#powerhours hr {
+		margin-bottom: 70px;
+	}
+
+	#powerhours .row > div {
+		margin-bottom: 30px;
 	}
 
 	#need .row p {
@@ -232,21 +364,27 @@ For sm devices
 		position: static;
 	}
 
-	.beer, .cocktail {
-		margin-top: 56px;
-	}
-
-	.wine {
-		margin-top: 25px;
-	}
-
-	.small-tequila img {
-		margin-top: 15px;
+	.need-icon {
+		width: 144px;
+		height: 144px;
+		padding: 23px;
+		margin-left: 8.3333333%;
+		margin-right: initial;
 	}
 
 	.friends {
-		margin-top: 30px;
+		padding: 0;
 	}
+	.friends div img:first-of-type {
+		margin-left: 11px;
+	}
+	.friends div img:nth-of-type(2) {
+		margin-left: -12px;
+	}
+	.friends div img:nth-of-type(3) {
+		margin-left: -8px;
+	}
+
 }
 
 
@@ -256,25 +394,20 @@ For md devices
 
 @media screen and (min-width: 992px) {
 
-	.jumbotron #bg {
-		padding: 100px 0;
-	}
 
 	.jumbotron p {
 		margin-top: 35px;
 	}
 
-	.beer, .cocktail {
-		margin-top: 68px;
+	#powerhours .row > div {
+		margin-bottom: 40px;
 	}
 
-	.wine {
-		margin-top: 12px;
+
+	.need-icon {
+		margin-left: 16.66666667%;
 	}
 
-	.friends {
-		margin-top: 10px;
-	}
 }
 
 
@@ -284,9 +417,6 @@ For lg devices
 
 @media screen and (min-width: 1200px) {
 
-	#about {
-		width: 970px;
-	}
 }
 
 
