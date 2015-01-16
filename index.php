@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rick's Power Hours</title>
-
+    <!-- Load Petrona Font -->
     <link href='http://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
-
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +33,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Rick's Power Hours</a>
+	      <a class="navbar-brand" href="index.php">Rick's Power Hours</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,17 +53,13 @@
     <div id="bg">
       <img src="img/rph.png">
       <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a></p>
-  		<!-- <div class="container">
-  		  <h1>Put some power in your hour</h1>
-  		  <p>A place for drinks, more drinks, and music video mash ups.</p>
-  		  <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a></p>
-  		 </div> -->
      </div>
 	</div>
 
   <div id="powerhours">
     <div class="container">
-    	<h1 class="text-center">Rick's Power Hours</h1>
+    	<h1 class="text-center">Power Hours</h1>
+      <hr>
     	<div class="row">
     		<div class="col-sm-6 col-lg-4">
     			<h4>80's Power Hour</h4>
@@ -107,93 +104,87 @@
     </div>
   </div>
 
-    <div class="container content" id="about">
+  <div id="about">
+    <div class="container content">
     	<h2 class="text-center">So what's a Power Hour?</h2>
       <hr>
         <div class="row">
-        	<div class="col-md-offset-1 col-md-10">
-            <p>A power hour is a magical drinking experience for you and your friends. The rules are simple: Every minute, you take a shot of beer (or wine, or whatever else tickles your fancy).</p>
-            <p>To help you keep track of this, Ricky the man of mystery has created a whole slew of music video mash ups. Each clip is a minute long, so when the song changes you know it's time to drink.</p>
-          </div>   
-        
+        	<div class="col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+            <p>A power hour is a drinking experience for you and your friends. The rules are simple: Every minute, you take a shot of beer (or wine, or whatever else tickles your fancy).</p>
+            <p>To help you keep track of this, Rick has created a whole slew of music video mash ups. Each clip is a minute long, so when the song changes you know it's time to drink.</p>
+          </div>       
         </div>
     </div>
+  </div>
 
     <div id="need">
       <div class="container content">
         <h2 class="text-center">What You'll Need</h2>
           <div class="row">
-            <div class="col-sm-6 text-center">
-              <h4>1</h4>
-              <p>Alcohol. If you choose beer, one 12oz beer can fill a shot glass 8 times. 60 minutes/8 equals 7.5, so about 7 and half beers per person.</p>
-            </div>  
-            <div class="col-xs-4 col-sm-2 image-issue beer">
-              <img src="img/beer2.png" class="img-responsive">
+            <div class="col-xs-offset-1 col-sm-2 col-md-offset-2 col-md-2 need-icon beer">
+              <div>
+                <img src="img/beer2.png" class="img-responsive">
+              </div>
             </div> 
-            <div class="col-xs-4 col-sm-2 center-image wine">              
-              <img src="img/wine.png" class="img-responsive">
-            </div>   
-            <div class="col-xs-4 col-sm-2 col-sm-2 image-issue cocktail">              
-              <img src="img/cocktail3.png" class="img-responsive">
-            </div>         
+            <div class="col-xs-offset-1 col-xs-10 col-sm-10 col-md-6 need-text">            
+              <h4>One</h4>
+              <hr>
+              <p>Alcohol. If you choose beer, one 12oz beer can fill a shot glass 8 times. 60 minutes/8 equals 7.5, so about 7 and a half beers per person.</p>
+            </div>     
           </div>
           <div class="row">
-            <div class="col-sm-6 hidden-xs small-tequila">
-              <img src="img/tequila.png" class="img-responsive">
+            <div class="col-xs-offset-1 col-sm-6 need-icon tequila">
+              <div>
+                <img src="img/tequila.png" class="img-responsive">
+              </div>
             </div> 
-            <div class="col-sm-6 text-center">
-              <h4>2</h4>
-              <p>1 shot glass per person participating.</p>
-            </div>    
-            <div class="col-sm-6 hidden-sm hidden-md hidden-lg small-tequila">
-              <img src="img/tequila.png" class="img-responsive">
-            </div>               
+            <div class="col-xs-offset-1 col-xs-10 col-sm-10 col-md-6 need-text">
+              <h4>Two</h4>
+              <hr>
+              <p>1 shot glass for each person participating.</p>
+            </div>           
           </div>
           <div class="row">
-            <div class="col-sm-6 text-center">
-                <h4>3</h4>
-                <p>Some speakers to hook up to whatever you're watching this on.</p>
-              </div>  
-              <div class="col-sm-6 speaker">
+            <div class="col-xs-offset-1 col-sm-6 need-icon speakers">
+              <div>
                 <img src="img/speakers.png" class="img-responsive">
-              </div>         
+              </div>
+            </div> 
+            <div class="col-xs-offset-1 col-xs-10 col-sm-10 col-md-6 need-text">
+                <h4>Three</h4>
+                <hr>
+                <p>Some speakers to hook up to whatever you plan on watching the power hours on.</p>
+              </div>  
           </div>
           <div class="row">
-            <div class="col-xs-4 col-sm-2 hidden-xs friends">
-              <img src="img/drunk-guy2.png" class="img-responsive">
+             <div class="col-xs-offset-1 col-sm-6 need-icon friends">
+              <div>
+                <img src="img/drunk-guy2.png" class="img-responsive">
+                <img src="img/drunk-guy.png" class="img-responsive">
+                <img src="img/drunk-guy2.png" class="img-responsive">
+              </div>
             </div> 
-             <div class="col-xs-4 col-sm-2 hidden-xs friends">
-              <img src="img/drunk-guy.png" class="img-responsive">
-            </div> 
-             <div class="col-xs-4 col-sm-2 hidden-xs friends">
-              <img src="img/drunk-guy2.png" class="img-responsive">
-            </div> 
-            <div class="col-xs-12 col-sm-6 text-center">
-              <h4>4</h4>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-10 col-md-6 need-text">
+              <h4>Four</h4>
+              <hr>
               <p>Friends. Or not, if you're the kind of person to crush beers by yourself. In other words, an awesome person.</p>
             </div>                  
-            <div class="col-xs-4 col-sm-2 hidden-sm hidden-md hidden-lg">
-              <img src="img/drunk-guy2.png" class="img-responsive">
-            </div> 
-             <div class="col-xs-4 col-sm-2 hidden-sm hidden-md hidden-lg">
-              <img src="img/drunk-guy.png" class="img-responsive">
-            </div> 
-             <div class="col-xs-4 col-sm-2 hidden-sm hidden-md hidden-lg">
-              <img src="img/drunk-guy2.png" class="img-responsive">
-            </div> 
           </div>
       </div>
+      <!-- Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a> -->
     </div>
 
     <footer class="footer">
-      <div class="text-center" id="link-to-top">
-        <a href="#top">
-          <img src="img/up.png">
-        </a>
-      </div>
+      <a href="#top">
+         <div class="col-xs-offset-1 col-sm-6 need-icon" id="to-top">
+          <div>
+            <img src="img/up.png" class="img-responsive">                  
+          </div>
+        </div> 
+      </a>
       <hr>
       <div class="container text-center">
-        <p class="text-muted">&copy; <?php echo date('Y') ?> <a href="http://kyledamken.com">Kyle Damken</a></p>
+        <p>&copy; <?php echo date('Y') ?> <a href="http://kyledamken.wordpress.com/about/" target="blank">Kyle Damken</a></p>
       </div>
     </footer>
 
