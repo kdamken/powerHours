@@ -1,0 +1,299 @@
+.row-top-spacer {
+	margin-top: 20px;
+}
+
+body {
+	padding-top: 50px;
+	font-family:'Petrona', serif;
+	font-weight: 400 !important;  
+}
+
+.item iframe {
+	margin-bottom: 100px;
+}
+
+.navbar {
+	box-shadow: 0 1px 5px gray;
+}
+
+.nav li:hover {
+	color: #555;
+	background: #e7e7e7
+}
+.jumbotron {
+	margin-bottom: 0;
+	background: url(../img/beer2.jpg);
+	background-size: 450px 450px; 
+	padding: 0 0;
+}
+
+.jumbotron .container {
+	/*background: rgba(255,255,255,.75);*/
+
+}
+
+.jumbotron #bg {
+	/*background: rgba(0,0,0,.3); */	
+	padding: 55px 0;
+	text-align: center;
+}
+
+.jumbotron img {
+	border-radius: 3px;
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.jumbotron p {
+	display: inline-block;
+	margin: 20px auto 0;
+}
+
+/*.jumbotron h1 {
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	margin-bottom: 0;
+	color: #fff;
+}
+
+.jumbotron p:first-of-type {
+	margin: 5px 0 20px 0; 
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	color: #fff;
+	font-weight: 400;
+}*/
+
+#powerhours {
+	background: #00B0B0;
+	padding: 70px 0 60px 0;
+}
+
+#powerhours h1 {
+	margin: 0 0 60px 0;
+	color: #fff;
+	font-size: 50px;
+}
+
+#powerhours h4 {
+	color: #fff;
+	font-size: 22px;
+}
+
+#powerhours .row div {
+	margin-bottom: 35px;
+}
+
+.content {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.content p {
+	font-size: 18px;
+}
+
+
+.content h2 {
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+.content hr {
+	width: 160px;
+	border-top: 1px solid #ccc;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about {
+	text-align: center;
+}
+
+#about p:nth-of-type(2) {
+	margin-top: 30px;
+}
+
+#need .row {
+	margin-bottom: 40px;
+}
+
+#need {
+	background: #FF8473;
+}
+
+#need p {
+	font-size: 23px;
+	margin-bottom: 20px
+}
+
+#need .row {
+	position: relative;
+}
+
+.row h4 {
+	font-size: 25px;
+}
+
+#need .row div.image-issue {
+	position: absolute;
+	bottom: 0;
+}
+
+#need .row div.cocktail {
+	right: 0;
+}
+
+.center-image {
+	margin:	0 auto;
+	float: none;
+}
+
+footer {
+	background:  #424647; /*#424647*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative; 
+}
+
+footer hr {
+	width: 200px;
+	margin-bottom: 39px;
+}
+
+#link-to-top {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -25px;
+}
+
+
+#link-to-top a {
+	border: 1px solid black;
+	margin-top: -10px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	color: black;
+	background: white;
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+
+}
+
+#link-to-top img {
+	width: 28px;
+	margin-top: 4px;
+}
+
+.speaker img {
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+.small-tequila img {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+/*********************
+For sm devices 
+**********************/
+
+@media screen and (min-width: 768px) {
+
+	.jumbotron img {
+		/*width: 50%;*/
+		max-width: 510px;
+	}
+
+	.center-image {
+		float: left;
+	}
+
+	#powerhours .row div {
+		margin-bottom: 0;
+	}
+
+	#need .row p {
+		margin-bottom: 0;
+	}
+
+	#need .row:first-of-type {
+		margin-bottom: 70px;
+	}
+
+	#need .row  {
+		margin-bottom: 75px;
+	}
+
+	#need .row div.image-issue {
+		position: static;
+	}
+
+	.beer, .cocktail {
+		margin-top: 56px;
+	}
+
+	.wine {
+		margin-top: 25px;
+	}
+
+	.small-tequila img {
+		margin-top: 15px;
+	}
+
+	.friends {
+		margin-top: 30px;
+	}
+}
+
+
+/*********************
+For md devices 
+**********************/
+
+@media screen and (min-width: 992px) {
+
+	.jumbotron #bg {
+		padding: 100px 0;
+	}
+
+	.jumbotron p {
+		margin-top: 35px;
+	}
+
+	.beer, .cocktail {
+		margin-top: 68px;
+	}
+
+	.wine {
+		margin-top: 12px;
+	}
+
+	.friends {
+		margin-top: 10px;
+	}
+}
+
+
+/*********************
+For lg devices 
+**********************/
+
+@media screen and (min-width: 1200px) {
+
+	#about {
+		width: 970px;
+	}
+}
+
+
+
+
+
+
+
+
+
